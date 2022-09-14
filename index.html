@@ -48,7 +48,7 @@
         </nav>
 
         <div class="header-text" id="scene">
-          <p data-depth="0.2">Front End Developer</p>
+          <p data-depth="0.2"> <span class="changing-text" > Front End Developer</span></p>
           <h1 data-depth="0.8">
             Hi, I am Chetan <br />
             from India
@@ -264,6 +264,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="index.js"></script>
     <script>
       const scriptURL =
@@ -283,6 +284,16 @@
           .catch((error) => console.error("Error!", error.message));
       });
     </script>
+
+    <script>
+      var typed = new Typed(".changing-text", {
+        strings: ["Web Developer", "React Developer", "Coder"],
+        typeSpeed: 50,
+        backSpeed: 70,
+        loop: true,
+      })
+    </script>
+
     <script>
       anime({
         targets: ".header-text",
